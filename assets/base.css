@@ -1,0 +1,43 @@
+/* Layout only. Colors, fonts and mood live in themes\<name>.css, so the look can change without touching a page. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; position: relative; min-height: 100vh; overflow-x: hidden; }
+.page { position: relative; z-index: 1; max-width: 1060px; margin: 0 auto; padding: 28px 44px 44px; }
+nav { display: flex; flex-wrap: wrap; gap: 6px 24px; align-items: baseline; }
+nav a { text-decoration: none; }
+nav .home { font-size: 1.08em; }
+nav .sp { flex: 1; }
+.hero { padding: 104px 0 72px; max-width: 660px; }
+.sub { padding: 62px 0 38px; max-width: 700px; }
+h1, h2, h3, p, ul { margin-top: 0; }
+p { margin-bottom: 14px; }
+section { padding: 30px 0; border-top: 1px solid var(--line); scroll-margin-top: 16px; }
+h2 { margin-bottom: 16px; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 44px; }
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.card { display: flex; flex-direction: column; padding: 24px 26px; text-decoration: none; color: inherit; }
+.card .foot { margin-top: auto; margin-bottom: 0; padding-top: 4px; }
+.kind { display: block; }
+.prose { display: grid; grid-template-columns: 190px 1fr; gap: 22px; }
+.prose > div { max-width: 40em; }
+.timeline { display: grid; grid-template-columns: 190px 1fr; gap: 22px; }
+.entry { display: grid; grid-template-columns: 190px 1fr; gap: 18px; padding-bottom: 22px; }
+.entry h3 { margin-bottom: 2px; }
+.entry ul { margin: 8px 0 0; padding-left: 1.15em; }
+.entry li { margin-bottom: 5px; }
+.org { margin-bottom: 0; }
+.tbc { white-space: nowrap; }
+.tbc sup { font-size: .62em; margin-left: 3px; padding: 0 5px; border-radius: 99px; border: 1px dashed currentColor; vertical-align: super; line-height: 1.2; font-weight: 400; font-style: normal; letter-spacing: 0; text-transform: none; }
+footer { border-top: 1px solid var(--line); padding-top: 22px; margin-top: 8px; }
+footer h2 { margin-bottom: 6px; }
+footer p { margin: 0; }
+@media (max-width: 800px) {
+  .page { padding: 20px 20px 34px; }
+  .hero { padding: 62px 0 42px; }
+  .sub { padding: 36px 0 24px; }
+  .cols, .cards, .prose, .timeline, .entry { grid-template-columns: 1fr; gap: 4px; }
+  .cards { gap: 16px; }
+  .prose > h2, .timeline > h2 { margin-bottom: 8px; }
+  .tbc { white-space: normal; }
+}
+.card img.cover { width: 100%; max-width: 240px; height: auto; border-radius: 6px; margin-bottom: 14px; }

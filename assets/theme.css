@@ -1,0 +1,31 @@
+/* Theme B: moonlit. Night sky, a moon, stars lying on a parabola. */
+:root { --ink:#efe9dc; --soft:#b9b4cc; --line:rgba(226,220,240,.2); --moon:#f2e3b8; --lav:#c2b2ec; --bright:#fbf5e6; }
+html { background:#10122b; color:var(--ink); }
+body { font:18px/1.72 Georgia,"KaiTi","楷体",serif;
+  background:radial-gradient(1000px 620px at 82% -6%, #3c3a78 0%, rgba(60,58,120,0) 70%), linear-gradient(180deg,#14163a 0,#10122b 700px,#0d0e22 100%); background-repeat:no-repeat; }
+.sky { position:absolute; top:0; right:max(0px, calc(50vw - 530px)); width:1060px; height:440px; pointer-events:none; }
+html:not([data-page=index]) .sky { opacity:.45; height:300px; width:722px; }
+.mooncat { position:absolute; top:8px; right:max(4px, calc(50vw - 490px)); width:320px; height:320px; pointer-events:none; }
+nav { font-size:16px; color:var(--soft); }
+nav a { color:inherit; } nav a:hover, nav a[aria-current] { color:var(--moon); }
+nav .home { color:var(--bright); }
+nav .lang { color:var(--moon); border:1px solid var(--line); border-radius:99px; padding:0 13px; }
+h1 { font-size:72px; line-height:1.05; font-weight:400; margin-bottom:18px; color:var(--bright); letter-spacing:-.5px; }
+.sub h1 { font-size:54px; }
+.tag { font-size:24px; line-height:1.5; font-style:italic; margin:0; color:var(--moon); }
+html[lang=zh-Hans] .tag { font-style:normal; }
+h2 { font-size:15px; font-weight:400; letter-spacing:.16em; text-transform:uppercase; color:var(--lav); }
+html[lang=zh-Hans] h2 { font-size:18px; letter-spacing:.3em; }
+h3 { font-size:26px; line-height:1.25; font-weight:400; margin-bottom:9px; color:var(--bright); }
+.entry h3 { font-size:22px; }
+.card { background:rgba(255,255,255,.055); border:1px solid var(--line); border-radius:16px; transition:border-color .2s, background .2s; }
+a.card:hover { border-color:var(--lav); background:rgba(255,255,255,.08); }
+.kind { font-size:14px; color:var(--lav); }
+.foot { font-size:15px; font-style:italic; color:var(--soft); }
+html[lang=zh-Hans] .foot { font-style:normal; }
+.when, .org { color:var(--soft); }
+.when { font-size:15px; padding-top:5px; }
+.tbc { color:var(--moon); }
+footer { color:var(--soft); }
+a:focus-visible { outline:2px solid var(--moon); outline-offset:3px; }
+@media (max-width:800px) { .mooncat { top:70px; right:0; width:150px; height:150px; } .hero { padding-top:150px; } h1 { font-size:48px; } .sub h1 { font-size:40px; } .sky { opacity:.55; width:100%; right:0; } .tag { font-size:21px; } }
