@@ -1,0 +1,22 @@
+/* Theme A: a math notebook. Warm paper, typeset serif, red-pen notes. */
+:root { --ink:#27231d; --soft:#6f675a; --line:#d9cfbb; --pen:#a8402c; --blue:#2f4a6d; }
+html { background:#f8f3e8; color:var(--ink); }
+body { font:19px/1.72 "Palatino Linotype","Book Antiqua",Palatino,Georgia,"KaiTi","楷体",serif; }
+nav { font-size:16px; color:var(--soft); border-bottom:1px solid var(--line); padding-bottom:12px; }
+nav a { color:inherit; } nav a:hover, nav a[aria-current] { color:var(--pen); }
+nav .home { color:var(--ink); } nav .lang { color:var(--blue); }
+h1 { font-size:66px; line-height:1.05; font-weight:400; margin-bottom:16px; letter-spacing:-.5px; }
+.sub h1 { font-size:52px; }
+.tag { font-size:23px; line-height:1.5; font-style:italic; margin:0; color:var(--blue); }
+html[lang=zh-Hans] .tag { font-style:normal; }
+h2 { font-size:21px; font-weight:400; color:var(--pen); }
+h3 { font-size:26px; line-height:1.25; font-weight:400; margin-bottom:8px; }
+.card { padding:0 0 12px; }
+a.card:hover h3 { color:var(--pen); }
+.kind { font-size:14px; letter-spacing:.09em; text-transform:uppercase; color:var(--soft); }
+.foot { font-family:"Segoe Print","Bradley Hand","KaiTi","楷体",cursive; font-size:15px; line-height:1.5; color:var(--pen); }
+.when, .org { color:var(--soft); }
+.when { font-size:15px; padding-top:5px; }
+.tbc { color:var(--pen); }
+footer { color:var(--soft); }
+@media (max-width:800px) { h1 { font-size:46px; } .sub h1 { font-size:40px; } }

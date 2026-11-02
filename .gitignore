@@ -1,0 +1,14 @@
+# old site's pages and student images: audit only, never in git
+旧站原文/
+内容清单.txt
+讨论记录.txt
+# built output, rebuild with build.py
+site/
+__pycache__/
+小茶草稿/
+# 只留本地，不进公开仓库（2026-11-01）
+AGENTS.md
+方案/
+测试/shots/
+测试/私密词.txt
+旧版/

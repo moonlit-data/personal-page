@@ -1,0 +1,24 @@
+/* Theme C: graph paper. Very large type and color blocks. */
+:root { --ink:#16181d; --soft:#5c6370; --line:#16181d; --grid:#e3e8ef; --coral:#ef6a4c; --teal:#1f8a83; --sun:#f3c24f; }
+html { background:#fbfcfd; color:var(--ink); }
+body { font:18px/1.62 "Segoe UI",system-ui,"Microsoft YaHei","微软雅黑",sans-serif;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px); background-size:32px 32px; }
+nav { font-weight:600; font-size:15px; }
+nav a { color:inherit; } nav a:hover, nav a[aria-current] { color:var(--coral); }
+nav .lang { color:#fff; background:var(--ink); padding:2px 14px; } nav .lang:hover { color:#fff; }
+h1, h2, h3 { font-family:"Bahnschrift","Segoe UI","Microsoft YaHei",sans-serif; font-weight:700; }
+h1 { font-size:104px; line-height:.98; letter-spacing:-3px; margin-bottom:16px; }
+.hero { padding:50px 0 44px; max-width:none; }
+.sub h1 { font-size:72px; letter-spacing:-2px; }
+.tag { font-size:26px; line-height:1.35; font-weight:600; margin:0; max-width:24em; }
+h2 { font-size:27px; line-height:1.15; }
+h3 { font-size:30px; line-height:1.15; margin-bottom:10px; }
+.entry h3 { font-size:22px; }
+.card { background:var(--sun); }
+.card:nth-child(even) { background:var(--teal); color:#fff; }
+.kind { font-size:14px; font-weight:700; text-transform:uppercase; letter-spacing:.05em; }
+.foot { font-size:15px; font-weight:600; }
+.when, .org { color:var(--soft); }
+.when { font-size:15px; padding-top:4px; font-weight:600; }
+.tbc { text-decoration:underline dashed; }
+@media (max-width:800px) { h1 { font-size:58px; letter-spacing:-1px; } .sub h1 { font-size:44px; } .tag { font-size:21px; } }
